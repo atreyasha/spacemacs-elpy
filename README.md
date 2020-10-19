@@ -18,6 +18,12 @@ $ make install
 
 To trigger a complete installation, append either `elpy` or `elpy-plus` to your `.spacemacs` dotfile under `dotspacemacs-configuration-layers`.
 
+### Troublshooting
+
+Based on personal experience, I encounter conflicts between `company` autocompletion from Elpy and the `auto-completion` layer offered by Spacemacs. For example, I notice that certain autocompletions don't work with Elpy when the Spacemacs `auto-completion` layer is enabled. As a workaround, I do not use the `auto-completion` layer.
+
+However I would welcome any pull-requests if someone finds a better workaround which diagnoses or resolves this conflict.
+
 ### Uninstallation
 
 For a complete uninstallation, remove `elpy` or `elpy-plus` from your `.spacemacs` dotfile. Next, execute the following to remove the aforementioned configuration code:
@@ -25,10 +31,6 @@ For a complete uninstallation, remove `elpy` or `elpy-plus` from your `.spacemac
 ```shell
 $ make uninstall
 ```
-
-### Troubleshooting
-
-Based on personal experience, I encounter conflicts between `company` autocompletion from Elpy and the `auto-completion` layer offered by Spacemacs. For example, I notice that certain autocompletions don't work with Elpy when the Spacemacs `auto-completion` layer is enabled. As a workaround, I do not use the `auto-completion` layer. However I would welcome any pull-requests if someone finds a better workaround which diagnoses or resolves this conflict.
 
 ## Bugs/Issues :bug:
 
