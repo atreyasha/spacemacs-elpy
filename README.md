@@ -2,11 +2,11 @@
 
 This repository documents a workflow to integrate [Elpy](https://github.com/jorgenschaefer/elpy) as a Spacemacs layer. This layer is intended to replace the Spacemacs `python` layer.
 
-## Usage
+## Usage :book:
 
 Here we provide two implementations of Elpy, specifically a barebone implementation which uses all upstream Elpy defaults (named `elpy`) and another which contains additional opinionated keybindings, toggles and auto-completion settings (named `elpy-plus`).
 
-See corresponding readmes for [elpy](+lang/elpy/README.md) and [elpy-plus](+lang/elpy-plus/README.md) for more detailed information.
+See corresponding readmes for [elpy](+lang/elpy) and [elpy-plus](+lang/elpy-plus) for more detailed information.
 
 ### Installation
 
