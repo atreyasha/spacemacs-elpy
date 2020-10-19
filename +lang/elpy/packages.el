@@ -1,6 +1,6 @@
 ;; -*- lexical-binding: t -*-
 ;; -*- mode: emacs-lisp -*-
-;; Barebones elpy implementation for Spacemacs
+;; Basic Elpy layer for Spacemacs
 
 (defconst elpy-packages '(elpy))
 
