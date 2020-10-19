@@ -16,7 +16,7 @@ Copy the relevant configuration code to `~/.emacs.d` by executing:
 $ make install
 ```
 
-To trigger a complete installation, append either `elpy` or `elpy-plus` to your `.spacemacs` dotfile under `dotspacemacs-configuration-layers`.
+To trigger a complete installation, append either `elpy` or `elpy-plus` to your `.spacemacs` dotfile under `dotspacemacs-configuration-layers` and reload `emacs`.
 
 ### Troublshooting
 
