@@ -9,8 +9,11 @@
   (use-package elpy
     :ensure t
     :defer t
+    ;; define actions before loading elpy
     :init (advice-add 'python-mode :before 'elpy-enable)
+    ;; define actions after loading elpy
     :config
+    ;; change elpy sign
     (diminish 'elpy-mode " Ⓔ")
     ;; configure auto-completion
     (add-hook 'elpy-mode-hook
@@ -99,14 +102,12 @@
       :on (setq elpy-shell-display-buffer-after-send t)
       :off (setq elpy-shell-display-buffer-after-send nil)
       :evil-leader-for-mode (python-mode . "td"))
-
     (spacemacs|add-toggle elpy/shell-echo-input
       :documentation "Toggles whether to echo input sent to the Python shell in the shell buffer"
       :status elpy-shell-echo-input
       :on (setq elpy-shell-echo-input t)
       :off (setq elpy-shell-echo-input nil)
       :evil-leader-for-mode (python-mode . "ti"))
-
     (spacemacs|add-toggle elpy/shell-echo-output
       :documentation "Toggles whether to echo the Python shell output in the echo area"
       :status elpy-shell-echo-output
