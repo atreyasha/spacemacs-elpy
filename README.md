@@ -10,17 +10,17 @@ See corresponding readmes for [elpy](+lang/elpy) and [elpy-plus](+lang/elpy-plus
 
 ### Installation
 
-In order to install both variants to your local `~/.emacs.d` configuration, simply execute:
+Copy the relevant configuration code to `~/.emacs.d` by executing:
 
 ```shell
 $ make install
 ```
 
-This will copy the relevant configuration code to `~/.emacs.d/private/+lang`. In order to trigger a complete installation, append either `elpy` or `elpy-plus` to your `.spacemacs` dotfile under `dotspacemacs-configuration-layers`.
+To trigger a complete installation, append either `elpy` or `elpy-plus` to your `.spacemacs` dotfile under `dotspacemacs-configuration-layers`.
 
 ### Uninstallation
 
-For complete uninstallation, remove `elpy` or `elpy-plus` from your `.spacemacs` dotfile. Next, execute the following to remove the aforementioned configuration code:
+For a complete uninstallation, remove `elpy` or `elpy-plus` from your `.spacemacs` dotfile. Next, execute the following to remove the aforementioned configuration code:
 
 ```shell
 $ make uninstall
