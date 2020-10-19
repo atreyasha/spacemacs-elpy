@@ -28,7 +28,7 @@ $ make uninstall
 
 ### Troubleshooting
 
-Based on personal experience, I encounter conflicts between `company` autocompletion from Elpy and the `auto-completion` layer offered by Spacemacs. For example, I notice that certain autocompletions don't work with Elpy when the Spacemacs `auto-completion` layer is enabled. As a personal workaround, I disable `auto-completion` globally. However I would welcome any issues or pull-requests if someone finds a better workaround which diagnoses or resolves this conflict.
+Based on personal experience, I encounter conflicts between `company` autocompletion from Elpy and the `auto-completion` layer offered by Spacemacs. For example, I notice that certain autocompletions don't work with Elpy when the Spacemacs `auto-completion` layer is enabled. As a workaround, I do not use the `auto-completion` layer. However I would welcome any pull-requests if someone finds a better workaround which diagnoses or resolves this conflict.
 
 ## Bugs/Issues :bug:
 
