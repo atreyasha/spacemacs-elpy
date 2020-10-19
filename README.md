@@ -1,10 +1,10 @@
 ## Spacemacs-Elpy :heart:
 
-This repository documents a workflow to integrate [Elpy](https://github.com/jorgenschaefer/elpy) as a Spacemacs layer. This layer is intended to replace the Spacemacs `python` layer.
+This repository documents [Elpy](https://github.com/jorgenschaefer/elpy) as a Spacemacs layer, which is intended as a replacement for the Spacemacs `python` layer.
 
 ## Usage :book:
 
-Here we provide two implementations of Elpy, specifically a barebone implementation which uses all upstream Elpy defaults (named `elpy`) and another which contains additional opinionated keybindings, toggles and auto-completion settings (named `elpy-plus`).
+Here we provide two implementations of Elpy, specifically a basic implementation which uses all upstream Elpy defaults (named `elpy`) and another which contains additional opinionated keybindings, toggles and auto-completion settings (named `elpy-plus`).
 
 See corresponding readmes for [elpy](+lang/elpy) and [elpy-plus](+lang/elpy-plus) for more detailed information.
 
@@ -31,3 +31,8 @@ $ make uninstall
 Based on personal experience, I encounter conflicts between `company` autocompletion from Elpy and the `auto-completion` layer offered by Spacemacs. For example, I notice that certain autocompletions don't work with Elpy when the Spacemacs `auto-completion` layer is enabled.
 
 As a personal workaround, I disable `auto-completion` globally. However I would welcome any issues or pull-requests if someone finds a better workaround which diagnoses or resolves this conflict.
+
+<!--  LocalWords:  Spacemacs Elpy readmes elpy dotfile Uninstallation
+ -->
+<!--  LocalWords:  uninstallation autocompletion autocompletions
+ -->
