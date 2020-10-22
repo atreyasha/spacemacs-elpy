@@ -2,7 +2,7 @@ SPACEMACS_PRIVATE_LAYERS ?= $(HOME)/.emacs.d/private
 
 .PHONY: install
 install:
-	cp -rf "+lang" $(SPACEMACS_PRIVATE_LAYERS)
+	cp -r "+lang" $(SPACEMACS_PRIVATE_LAYERS)
 
 .PHONY: uninstall
 uninstall:
