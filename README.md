@@ -6,7 +6,7 @@ This repository documents [Elpy](https://github.com/jorgenschaefer/elpy) as a Sp
 
 Here we provide two implementations of Elpy, specifically a basic implementation which uses all upstream Elpy defaults (named `elpy`) and another which contains opinionated keybindings, toggles and auto-completion settings (named `elpy-plus`).
 
-For more information, see the corresponding readmes under [elpy](+lang/elpy) and [elpy-plus](+lang/elpy-plus).
+For more information, see the corresponding readmes under [elpy](/elpy) and [elpy-plus](/elpy-plus).
 
 ### Installation
 
