@@ -1,10 +1,11 @@
-SPACEMACS_PRIVATE_LAYERS ?= $(HOME)/.emacs.d/private
+SPACEMACS_PRIVATE_LAYERS ?= $(HOME)/.emacs.d/private/+lang/
 
 .PHONY: install
 install:
-	cp -r "+lang" "$(SPACEMACS_PRIVATE_LAYERS)"
+	mkdir -p "$(SPACEMACS_PRIVATE_LAYERS)"
+	cp -r elpy elpy-plus "$(SPACEMACS_PRIVATE_LAYERS)"
 
 .PHONY: uninstall
 uninstall:
-	rm -rf "$(SPACEMACS_PRIVATE_LAYERS)/+lang/elpy"
-	rm -rf "$(SPACEMACS_PRIVATE_LAYERS)/+lang/elpy-plus"
+	rm -rf "$(SPACEMACS_PRIVATE_LAYERS)/elpy"
+	rm -rf "$(SPACEMACS_PRIVATE_LAYERS)/elpy-plus"
