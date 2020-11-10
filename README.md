@@ -10,7 +10,7 @@ For more information, see the corresponding readmes under [elpy](/elpy) and [elp
 
 ### Installation
 
-We assume the default Spacemacs directory structure where all personal configuration code is housed in `~/.emacs.d`. Copy the relevant configuration code to `~/.emacs.d` by executing:
+We assume all personal configuration code is housed in `~/.emacs.d`. Copy the relevant configuration code to `~/.emacs.d` by executing:
 
 ```shell
 $ make install
