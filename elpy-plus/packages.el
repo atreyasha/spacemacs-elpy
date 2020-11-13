@@ -17,13 +17,11 @@
     (diminish 'elpy-mode " Ⓔ")
     ;; configure auto-completion
     (add-hook 'elpy-mode-hook
-              'column-enforce-mode
               '(lambda ()
-                 ;; after M-tab and no completion upon delay
-                 (setq-local company-backends '((elpy-company-backend)))
+                 ;; pure on-demand completion with M-<tab>
                  (setq company-minimum-prefix-length 2)
                  (setq company-idle-delay nil)
-                 (define-key elpy-mode-map (kbd "M-<tab>") 'elpy-company-backend)))
+                 (define-key elpy-mode-map (kbd "M-<tab>") 'company-complete)))
     ;; python-mode key bindings
     (spacemacs/declare-prefix-for-mode 'python-mode "mh" "help")
     (spacemacs/declare-prefix-for-mode 'python-mode "mg" "goto")
