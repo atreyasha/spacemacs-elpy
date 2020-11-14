@@ -1,5 +1,14 @@
 ## Elpy-plus
 
-This implementation is adapted from Rainer Gemulla's version, see the original (now deprecated) version [here](https://github.com/rgemulla/spacemacs-layers/tree/master/%2Blang/elpy).
+### Overview
 
-The differences include removal of (now) boilerplate code, removal of company autocompletions based on delays and changing the `company-complete` keybinding to `M-<tab>`.
+This implementation is adapted from Rainer Gemulla's [repository](https://github.com/rgemulla/spacemacs-layers/tree/master/%2Blang/elpy).
+
+###  Differences
+
+Following are the key differences from the aforementioned legacy code:
+
+1. Removal of boilerplate code
+2. Removing delay-based autocompletions, ie. autocompletions only on demand
+3. Modified the `company-complete` keybinding to `M-<tab>`
+4. Hard-coding the `company-backends` variable with sensible upstream defaults. This is necessary to resolve conflicts with the `auto-completion` Spacemacs layer, in case it is used.
