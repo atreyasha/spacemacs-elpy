@@ -9,6 +9,6 @@ This implementation is adapted from Rainer Gemulla's [repository](https://github
 Following are the key differences from the aforementioned legacy code:
 
 1. Removal of boilerplate code
-2. Removing delay-based autocompletions, ie. autocompletions only on demand
-3. Modified the `company-complete` keybinding to `M-<tab>`
+2. Removal of delay-based autocompletions, ie. autocompletions only on demand
+3. Modification of the `company-complete` keybinding to `M-<tab>`
 4. Hard-coding the `company-backends` variable with sensible upstream defaults. This is necessary to resolve conflicts with the `auto-completion` Spacemacs layer, in case it is used.
