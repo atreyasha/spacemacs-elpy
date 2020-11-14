@@ -115,3 +115,9 @@
       :off (setq elpy-shell-echo-output nil)
       :evil-leader-for-mode (python-mode . "to"))
     ))
+
+(defun elpy-plus/post-init-elpy ()
+  (add-hook 'elpy-mode-hook
+            '(lambda ()
+               ;; hard configure auto-completion
+               (setq company-backends '(elpy-company-backend company-bbdb company-cmake company-clang company-files (company-dabbrev-code company-gtags company-etags company-keywords) company-oddmuse company-dabbrev)))))
