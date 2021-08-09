@@ -1,8 +1,8 @@
-## Spacemacs-Elpy :heart:
+# spacemacs-elpy :heart:
 
 This repository documents [Elpy](https://github.com/jorgenschaefer/elpy) as a Spacemacs layer, which is intended as a replacement for the Spacemacs `python` layer.
 
-## Usage :book:
+## Usage
 
 Here we provide two implementations of Elpy, specifically a basic implementation which uses all upstream Elpy defaults (named `elpy`) and another which contains opinionated keybindings, toggles and auto-completion settings (named `elpy-plus`).
 
@@ -26,7 +26,7 @@ For a complete uninstallation, remove `elpy` or `elpy-plus` from your `.spacemac
 $ make uninstall
 ```
 
-## Bugs/Issues :bug:
+## Bugs/Issues
 
 Feel free to open a GitHub issue in case of any bugs.
 
