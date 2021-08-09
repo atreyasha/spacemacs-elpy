@@ -2,7 +2,7 @@
 
 ### Overview
 
-This implementation is adapted from Rainer Gemulla's [repository](https://github.com/rgemulla/spacemacs-layers/tree/master/%2Blang/elpy).
+This implementation is adapted from [spacemacs-layers](https://github.com/rgemulla/spacemacs-layers/tree/master/%2Blang/elpy), which is distributed under the GPL-3.0 [License](../LICENSE).
 
 ###  Differences
 
