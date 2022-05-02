@@ -27,7 +27,7 @@
     (diminish 'elpy-mode " Ⓔ")
     ;; configure auto-completion
     (add-hook 'elpy-mode-hook
-              '(lambda ()
+              (lambda ()
                  ;; pure on-demand completion with M-<tab>
                  (setq company-minimum-prefix-length 2)
                  (setq company-idle-delay nil)
@@ -125,7 +125,7 @@
 
 (defun elpy-plus/post-init-elpy ()
   (add-hook 'elpy-mode-hook
-            '(lambda ()
+            (lambda ()
                ;; hard configure auto-completion
                (setq company-backends '(elpy-company-backend company-bbdb
                                                              company-cmake
