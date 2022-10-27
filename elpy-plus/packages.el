@@ -17,13 +17,14 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-(defconst elpy-plus-packages '(elpy))
+(defconst elpy-plus-packages '(elpy python-isort))
 
 (defun elpy-plus/init-elpy ()
   (use-package elpy
     :ensure t
     :defer t
-    :init (advice-add 'python-mode :before 'elpy-enable):config
+    :init (advice-add 'python-mode :before 'elpy-enable)
+    :config
     (diminish 'elpy-mode " Ⓔ")
     ;; configure auto-completion
     (add-hook 'elpy-mode-hook
@@ -32,6 +33,10 @@
                  (setq company-minimum-prefix-length 2)
                  (setq company-idle-delay nil)
                  (define-key elpy-mode-map (kbd "M-<tab>") 'company-complete)))
+    (defun elpy-format-code-plus ()
+      (interactive)
+      (elpy-format-code)
+      (python-isort-buffer))
     ;; python-mode key bindings
     (spacemacs/declare-prefix-for-mode 'python-mode
       "mh" "help")
@@ -77,7 +82,7 @@
       "sR" 'elpy-shell-send-region-or-buffer-and-step-and-go
       "sb" 'elpy-shell-send-buffer-and-step "sB"
       'elpy-shell-send-buffer-and-step-and-go "rc"
-      'elpy-check "re" 'elpy-multiedit "rf" 'elpy-format-code
+      'elpy-check "re" 'elpy-multiedit "rf" 'elpy-format-code-plus
       "rr" 'elpy-refactor "rs" 'elpy-rgrep-symbol
       "Va" 'pyvenv-activate "Vd" 'pyvenv-deactivate
       "Vw" 'pyvenv-workon "nc" 'elpy/insert-codecell-above
@@ -135,3 +140,7 @@
                                                                                    company-keywords)
                                                              company-oddmuse
                                                              company-dabbrev)))))
+
+(defun elpy-plus/init-python-isort ()
+  (use-package python-isort
+    :defer t))
